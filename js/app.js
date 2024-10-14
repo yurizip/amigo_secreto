@@ -26,7 +26,7 @@ function adicionar(){
 }
 function sortear(){
     embaralha(array_nomes);
-    if(array_nomes.length <= 4){
+    if(array_nomes.length < 4){
         alert('Para que o sorteio funcione, precisam ser adicionados pelo menos 4 nomes!');
         return;
     }
