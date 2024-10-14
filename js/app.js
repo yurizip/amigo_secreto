@@ -2,13 +2,13 @@ let array_nomes = [];
 function adicionar(){
     let nome = document.getElementById('nome-amigo');
     let lista = document.getElementById('lista-amigos');
+    if(array_nomes.includes(nome.value)){
+        alert('Nome ja adicionado!');
+        return;
+    }
     array_nomes.push(nome.value);
     if(nome.value == ''){
         alert('Informe o nome do amigo!');
-        return;
-    }
-    if(array_nomes.includes(nome.value)){
-        alert('Nome ja adiciionado!');
         return;
     }
     if(lista.textContent == nome.value){
